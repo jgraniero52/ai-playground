@@ -1,0 +1,10 @@
+name: ai-playground
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: A Python program to deploy a Huggingface LLM model to Amazon SageMaker with CloudWatch monitoring
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: sagemaker-aws-python
