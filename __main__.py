@@ -26,14 +26,14 @@ llm = HuggingFaceLlm(
     'Llama2Llm',  # Custom name for the LLM model
     instance_type='ml.t2.medium',  # AWS instance type for SageMaker deployment
     environment_variables={
-        'HF_MODEL_ID': 'NousResearch/Llama-2-7b-chat-hf',  # HuggingFace model ID
+        'HF_MODEL_ID': 'openai-community/gpt2',  # HuggingFace model ID
         'SM_NUM_GPUS': '1',  # Number of GPUs to use
         'MAX_INPUT_LENGTH': '2048',  # Maximum input length for the model
         'MAX_TOTAL_TOKENS': '4096',  # Maximum number of tokens
         'MAX_BATCH_TOTAL_TOKENS': '8192',  # Maximum tokens in a batch
     },
-    tgi_version='0.9.3',  # TGI version for the backend
-    pytorch_version='2.0.1',  # PyTorch version to use
+    tgi_version='2.0.0',  # TGI version for the backend
+    pytorch_version='2.3.0',  # PyTorch version to use
     startup_health_check_timeout_in_seconds=600  # Health check timeout in seconds
 )
 
