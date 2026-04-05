@@ -1,0 +1,8 @@
+## Interface: 120000
+## Title: Health & Threat Alert
+## Author: wow-health-threat-addon
+## Version: 1.0.0
+## Notes: Flashes screen and plays sound when a unit drops below 20% health, or when a hostile mob targets you.
+## DefaultState: Enabled
+
+WowHealthThreat.lua
